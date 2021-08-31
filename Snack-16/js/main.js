@@ -16,4 +16,21 @@ const zucchine = [
     {varieta: 'romana', peso: 6, lunghezza: 8, },
 ];
 
-// CALCOLO IL PESO TOTALE DELLE ZUCCHINE
+// CALCOLO IL PESO TOTALE DELLE ZUCCHINE - PRIMA SOLUZIONE
+// let totalWeight = 0;
+
+// for (let i = 0; i < zucchine.length; i++) {
+//     totalWeight = totalWeight + zucchine[i].peso;
+// };
+
+// console.log(totalWeight);
+
+// SECONDA SOLUZIONE
+
+let totalWeight = 0;
+
+for (let key in zucchine) {
+    totalWeight += zucchine[key].peso;
+};
+
+console.log(totalWeight)
