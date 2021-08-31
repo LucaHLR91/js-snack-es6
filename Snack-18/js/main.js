@@ -25,3 +25,12 @@ for (let i = 0; i < team.length; i++) {
 console.log(team);
 
 // CREAO ARRAY COMPOSTO DA NOMI E FALLI SUBITI DELLE SQUADRE
+const teamA = [];
+let newTeam;
+for (let i = 0; i < team.length; i++) {
+    let {name: teamName, foulSuffered: teamFouls} = team[i]
+    newTeam = {teamName, teamFouls};
+    teamA.push(newTeam);
+};
+
+console.log(teamA);
