@@ -3,20 +3,11 @@
 // CREO ARRAY DI OGGETTI
 
 let bici = [
-    {
-        nome: 'atala',
-        peso: 10
-    },
+    {nome: 'atala', peso: 10},
 
-    {
-        nome: 'vicini',
-        peso: 12
-    },
+    {nome: 'vicini', peso: 12},
 
-    {
-        nome: 'falcon',
-        peso: 25
-    }
+    {nome: 'falcon', peso: 25},
 ];
 
 console.log(bici);
