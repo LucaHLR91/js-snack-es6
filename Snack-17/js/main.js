@@ -13,11 +13,11 @@ let bici = [
 ];
 
 // STAMPO LA BICI CON IL PESO MINORE
-let lightWeightBike = bici[0];
+let lightWeightBike = null;
 
 for (let i = 0; i < bici.length; i++) {
-    let [bikeWeight] = bici[i].peso;
-    if (lightWeightBike.peso < bikeWeight) {
+    let {nome: bikeName, peso: bikeWeight} = bici[i];
+    if (lightWeightBike == null || lightWeightBike.peso > bikeWeight) {
         lightWeightBike = bici[i];
     }
 };
