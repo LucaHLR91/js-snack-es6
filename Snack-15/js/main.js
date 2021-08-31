@@ -27,7 +27,7 @@ for (let i = 0; i < bici.length; i++) {
     console.log(bici[i]);
     
     if (bici[i].peso < biciLeggera.peso) {
-        biciLeggera = bici[i].peso;
+        biciLeggera = bici[i];
     }
 };
 
