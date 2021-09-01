@@ -22,4 +22,6 @@ for (let i = 0; i < bici.length; i++) {
     }
 };
 
-console.log (lightWeightBike);
+let {nome, peso} = lightWeightBike;
+
+console.log (`La bici più leggera è la ${nome} e pesa ${peso}`);
