@@ -34,3 +34,11 @@ for (let i = 0; i < team.length; i++) {
 };
 
 console.log(teamA);
+
+
+//FUNZIONE PER GENERARE NUMERI RANDOM
+function randomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(math.random() * (max - min) + 1);
+};
