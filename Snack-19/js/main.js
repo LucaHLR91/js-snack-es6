@@ -21,14 +21,11 @@ console.log(myFunction(numbers, numberA, numberB));
 
 // SCRIVO LA FUNZIONA CON IL FILTER
 
-const miaFunzione = (array, numA, numB) => {
-    let nuoviNumeri = [];
-    let numero = array.filter((numero, index) => {
-        if (index >= numA && index <= numB) {
-            nuoviNumeri.push(numero);
-        }
-    });
-    return nuoviNumeri;
-};
+let newArray = numbers.filter((element, i) => {
+    if ( i >= numberA && i <= numberB) {
+        return true
+    }
+    return false;
+})
 
-console.log(miaFunzione(numbers, numberA, numberB));
+console.log(newArray);
