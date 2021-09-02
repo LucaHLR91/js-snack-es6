@@ -19,7 +19,7 @@ const myFunction = (array, numA, numB) => {
 
 console.log(myFunction(numbers, numberA, numberB));
 
-// SCRIVO LA FUNZIONA CON IL FILTER
+// SCRIVO LA SOLUZIONE CON IL FILTER
 
 let newArray = numbers.filter((element, i) => {
     if ( i >= numberA && i <= numberB) {
